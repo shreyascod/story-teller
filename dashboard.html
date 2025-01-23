@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>User Dashboard</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">StoryTeller</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/story/create.html">Create Story</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle-btn">Switch Theme</button>
+    </header>
+    <main class="main-content">
+        <div class="container">
+            <h2>Welcome, [User Name]!</h2>
+            <button onclick="window.location.href='/story/create.html'">Create New Story</button>
+            <h3>Your Stories</h3>
+            <ul>
+                <li><a href="/story/read.html?story=1">Story Title 1</a></li>
+                <li><a href="/story/read.html?story=2">Story Title 2</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Interactive Storytelling Platform</p>
+    </footer>
+    <script src="/js/scripts.js"></script>
+</body>
+</html>

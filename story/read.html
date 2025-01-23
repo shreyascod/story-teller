@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Read a Story</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">StoryTeller</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="create.html">Create Story</a></li>
+                <li><a href="/profile.html">Profile</a></li>
+            </ul>
+        </nav>
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn">Switch Theme</button>
+    </header>
+    <main class="main-content">
+        <div class="container">
+            <h2>Story Title</h2>
+            <p>[Story content goes here]</p>
+            <div class="options">
+                <button onclick="chooseOption('option1')">Option 1</button>
+                <button onclick="chooseOption('option2')">Option 2</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Interactive Storytelling Platform</p>
+    </footer>
+    <script>
+        function chooseOption(option) {
+            alert('You chose ' + option);
+            // Logic for branching story paths
+        }
+    </script>
+    <!-- JavaScript for Interactivity -->
+    <script src="/js/scripts.js"></script>
+</body>
+</html>

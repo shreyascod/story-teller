@@ -1,0 +1,276 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.9;
+    background-color: #f4f4f4;
+    background-image: url('/assets/Designer1.png'); /* Background image for the webpage */
+    background-size: cover;
+    background-position: center;
+    color: #0c0c0c;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffffcb;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 10px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #007bff; /* Highlight color on hover */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('');
+    background-size: cover;
+    color: #120202;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero .btn-primary {
+    background-color: #5a67d8;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn-secondary {
+    background-color: #9f7aea;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #0d0909;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent footer */
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 30px;
+    flex: 1;
+}
+
+.story-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.story-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.story-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.read-more-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Header Styles */
+.header {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent header */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Form Styles */
+.story-creation-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: z#030303;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+#addChapterBtn, button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addChapterBtn:hover, button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#saveDraftBtn {
+    background-color: #6c757d;
+}
+
+#saveDraftBtn:hover {
+    background-color: #5a6268;
+}
+
+#publishStoryBtn {
+    background-color: #28a745;
+}
+
+#publishStoryBtn:hover {
+    background-color: #218838;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+body.dark-mode .header, 
+body.dark-mode .footer {
+    background-color: #444;
+}
+
+body.dark-mode .story-card {
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+body.dark-mode .read-more-btn {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container, .auth-container {
+        width: 90%;
+    }
+
+    header, footer {
+        font-size: 14px;
+    }
+
+    button, .btn-primary, .btn-secondary, .read-more-btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+/* Error State */
+input.error {
+    border: 2px solid red;
+}
+
+/* Success Message */
+#message.success {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
